@@ -7,7 +7,6 @@
 - React
 - TypeScript
 - Vite
-- CSS Modules
 
 ## Инструкция по запуску
 
