@@ -1,8 +1,9 @@
 import "./Home.css";
+import ParallaxItem from "./Parallax/ParallaxItem";
 
 export default function Home() {
     return <>
-        {/*  Parallax container  */}
+        <ParallaxItem/>
         {/*  Subscribe container  */}
         {/*  Social container  */}
     </>;
