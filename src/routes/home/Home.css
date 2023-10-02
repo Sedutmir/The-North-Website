@@ -1,4 +1,4 @@
-.subscribe {
+.subscribe, .social {
     color: #fff;
     background: #222;
 
@@ -33,8 +33,6 @@
     background: #6FCA6D;
     border: none;
     border-radius: 0 12px 12px 0;
-
-    /*color: #fff;*/
 }
 
 .subscribe form input:focus-visible {
@@ -43,4 +41,67 @@
 
 .subscribe form input:last-child:active {
     outline: 1px solid #76ca6d;
+}
+
+.social {
+    position: relative;
+    padding: 2em;
+}
+
+.social::before {
+    content: "";
+    display: inline-block;
+    width: 75%;
+    height: 1px;
+    background: #fffa;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.social > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+
+    width: 70%;
+}
+
+.social iframe {
+    aspect-ratio: 16 / 9;
+
+    width: 40%;
+    height: auto;
+}
+
+.social-text {
+    max-width: 30%;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    flex-flow: row nowrap;
+    padding: 0;
+}
+
+.social-icons li {
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: #333;
+}
+
+.social-icons li a {
+    display: inline-block;
+    padding: .7em;
+    width: 100%;
+    height: 100%;
+}
+
+.social-icons img {
+    height: 2em;
 }
