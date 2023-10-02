@@ -93,6 +93,13 @@
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     background: #333;
+    transform: scale(1);
+    transition: .5s;
+}
+
+.social-icons li:hover {
+    background: #444;
+    transform: scale(1.1);
 }
 
 .social-icons li a {
