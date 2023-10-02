@@ -1,0 +1,46 @@
+.subscribe {
+    color: #fff;
+    background: #222;
+
+    padding: .5em;
+
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe > div {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe form {
+    margin-left: 3em;
+}
+
+.subscribe form input {
+    padding: .5em;
+}
+
+.subscribe form input:first-child {
+    background: #fff;
+    border: none;
+    border-radius: 12px 0 0 12px;
+
+    color: #000;
+}
+
+.subscribe form input:last-child {
+    background: #6FCA6D;
+    border: none;
+    border-radius: 0 12px 12px 0;
+
+    /*color: #fff;*/
+}
+
+.subscribe form input:focus-visible {
+    outline: none;
+}
+
+.subscribe form input:last-child:active {
+    outline: 1px solid #76ca6d;
+}
