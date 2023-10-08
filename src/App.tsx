@@ -7,8 +7,8 @@ import {
 import { TranslationProvider } from 'i18nano';
 import translations from './i18n/index.ts';
 
-import Header from "./Header.tsx";
-import Footer from "./Footer.tsx";
+import Header from "./sections/Header.tsx";
+import Footer from "./sections/Footer.tsx";
 
 import Home from "./routes/home/Home.tsx";
 import Privacy from "./routes/privacy/Privacy.tsx";

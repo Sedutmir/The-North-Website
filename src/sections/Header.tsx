@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation, useTranslationChange } from "i18nano";
-import logo from "./assets/TheNorthWhite.png";
+import logo from "../assets/TheNorthWhite.png";
 import "./Header.css";
 
 export default function Header() {
