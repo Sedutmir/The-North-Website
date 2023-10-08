@@ -1,25 +1,27 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
 import { useTranslation, useTranslationChange } from "i18nano";
+
+import { NavLink } from "react-router-dom";
+
 import logo from "../assets/TheNorthWhite.png";
 import "./Header.css";
 
 export default function Header() {
-    const class_link = ({ isActive }: { isActive: boolean}) => isActive ? "link active" : "link";
     const i18n = useTranslation();
-    const translation = useTranslationChange();
-    // translation.change('it');
+
+    // Display underline for active link
+    const class_link = ({ isActive }: { isActive: boolean}) => isActive ? "link active" : "link";
 
     const [language, setLanguage] = useState('en');
+    const changeLanguage = (ev: { target: { value: string; }; }) => {
+        setLanguage(ev.target.value);
+    }
 
+    const translation = useTranslationChange();
     useEffect(
         () => {
             translation.change(language);
     }, [language]);
-
-    const changeLanguage = (ev: { target: { value: string; }; }) => {
-        setLanguage(ev.target.value);
-    }
 
     return <header>
         <nav>

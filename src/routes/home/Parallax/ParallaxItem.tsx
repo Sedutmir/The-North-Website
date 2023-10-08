@@ -1,7 +1,9 @@
 import React from 'react';
 import {Parallax} from 'react-parallax';
+
 import Landscape from '../../../assets/Landscape.png'
 import TheNorth from '../../../assets/TheNorth.png'
+
 import './ParallaxItem.css'
 
 const ParallaxItem: React.FC = () => (

@@ -7,9 +7,11 @@ import {
 import { TranslationProvider } from 'i18nano';
 import translations from './i18n/index.ts';
 
+/* Sections */
 import Header from "./sections/Header.tsx";
 import Footer from "./sections/Footer.tsx";
 
+/* Routes */
 import Home from "./routes/home/Home.tsx";
 import Privacy from "./routes/privacy/Privacy.tsx";
 import Translation from "./routes/translation/Translation.tsx";
