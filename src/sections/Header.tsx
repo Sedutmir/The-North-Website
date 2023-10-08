@@ -1,27 +1,16 @@
-import { useEffect, useState } from "react";
-import { useTranslation, useTranslationChange } from "i18nano";
+import { useTranslation } from "i18nano";
 
 import { NavLink } from "react-router-dom";
 
 import logo from "../assets/TheNorthWhite.png";
 import "./Header.css";
+import LanguageSelect from "../components/LanguageSelect/LanguageSelect";
 
 export default function Header() {
     const i18n = useTranslation();
 
     // Display underline for active link
     const class_link = ({ isActive }: { isActive: boolean}) => isActive ? "link active" : "link";
-
-    const [language, setLanguage] = useState('en');
-    const changeLanguage = (ev: { target: { value: string; }; }) => {
-        setLanguage(ev.target.value);
-    }
-
-    const translation = useTranslationChange();
-    useEffect(
-        () => {
-            translation.change(language);
-    }, [language]);
 
     return <header>
         <nav>
@@ -57,10 +46,7 @@ export default function Header() {
                 </li>
             </ul>
 
-            <select name="language" id="language" onChange={changeLanguage}>
-                <option value="en">EN</option>
-                <option value="ru">RU</option>
-            </select>
+            <LanguageSelect />
         </nav>
     </header>;
 }
