@@ -19,11 +19,13 @@ nav {
     position: relative;
 }
 
-.logo {
+.logo-wrapper {
     position: absolute;
     left: 0;
     top: 0;
+}
 
+.logo {
     height: 2.5em;
 }
 
