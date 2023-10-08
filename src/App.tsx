@@ -21,7 +21,7 @@ import './App.css';
 
 export default function App() {
   return (
-    <TranslationProvider translations={translations} language="en">
+    <TranslationProvider translations={translations} language="en" fallback="en">
       <Router>
           <div className="container">
               <Header />
