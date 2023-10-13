@@ -22,7 +22,7 @@ a {
   font-weight: 500;
   color: #fff;
   text-decoration: inherit;
-  transition: .5s;
+  transition: 0.5s;
 }
 a:hover {
   color: #aaa;

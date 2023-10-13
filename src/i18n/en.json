@@ -1,10 +1,10 @@
 {
-    "home": "Home",
-    "privacy": "Privacy",
-    "translation": "Translation",
-    "blog": "Blog",
-    "contact": "Contact",
-    "copyright": "All rights reserved",
-    "subcribe_newsletter": "Subcribe to our Newsletter",
-    "subscribe_button": "Subcribe"
+  "home": "Home",
+  "privacy": "Privacy",
+  "translation": "Translation",
+  "blog": "Blog",
+  "contact": "Contact",
+  "copyright": "All rights reserved",
+  "subcribe_newsletter": "Subcribe to our Newsletter",
+  "subscribe_button": "Subcribe"
 }

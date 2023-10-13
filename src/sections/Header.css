@@ -1,85 +1,85 @@
 header {
-    background: #222;
+  background: #222;
 
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    width: 100vw;
-    height: 4em;
-    padding: .7em;
+  width: 100vw;
+  height: 4em;
+  padding: 0.7em;
 }
 
 nav {
-    height: 100%;
-    width: 95%;
+  height: 100%;
+  width: 95%;
 
-    display: flex;
-    place-items: center;
+  display: flex;
+  place-items: center;
 
-    position: relative;
+  position: relative;
 }
 
 .logo-wrapper {
-    position: absolute;
-    left: 0;
-    top: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .logo {
-    height: 2.5em;
+  height: 2.5em;
 }
 
 header ul {
-    min-width: 65vw;
-    list-style: none;
+  min-width: 65vw;
+  list-style: none;
 
-    flex-grow: 1;
+  flex-grow: 1;
 
-    display: flex;
-    column-gap: 2em;
-    justify-content: center;
+  display: flex;
+  column-gap: 2em;
+  justify-content: center;
 }
 
 .link {
-    color: #fff;
-    font-size: 1.4em;
-    font-weight: normal;
-    text-transform: uppercase;
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-transform: uppercase;
 
-    position: relative;
+  position: relative;
 
-    transition: .5s;
+  transition: 0.5s;
 }
 
 .link::before {
-    content: '';
-    display: inline-block;
+  content: '';
+  display: inline-block;
 
-    position: absolute;
-    bottom: -.1em;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  bottom: -0.1em;
+  left: 50%;
+  transform: translateX(-50%);
 
-    background: #fff;
-    border-radius: .5em;
+  background: #fff;
+  border-radius: 0.5em;
 
-    opacity: .5;
+  opacity: 0.5;
 
-    width: .05em;
-    height: .05em;
+  width: 0.05em;
+  height: 0.05em;
 
-    transition: 1s;
+  transition: 1s;
 }
 
 .link.active {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .link.active::before {
-    opacity: 1;
-    width: 105%;
+  opacity: 1;
+  width: 105%;
 }
 
 .link:hover::before {
-    background: #aaa;
+  background: #aaa;
 }

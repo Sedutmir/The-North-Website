@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
-import { useTranslationChange } from "i18nano";
+import { useEffect, useState } from 'react';
+import { useTranslationChange } from 'i18nano';
 
-import "./LanguageSelect.css";
+import './LanguageSelect.css';
 
 export default function LanguageSelect() {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState('en');
   const changeLanguage = (ev: { target: { value: string } }) => {
     setLanguage(ev.target.value);
   };

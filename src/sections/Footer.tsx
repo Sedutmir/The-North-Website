@@ -1,5 +1,5 @@
-import { useTranslation } from "i18nano";
-import "./Footer.css";
+import { useTranslation } from 'i18nano';
+import './Footer.css';
 
 export default function Footer() {
   const i18n = useTranslation();
@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer>
       <p>
-        Copyright © {year} {i18n("copyright")}
+        Copyright © {year} {i18n('copyright')}
       </p>
     </footer>
   );
