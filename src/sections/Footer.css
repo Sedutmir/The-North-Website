@@ -1,11 +1,12 @@
 footer {
-  background: #222;
+  display: flex;
+  place-content: center;
+
   width: 100vw;
   padding: 0.5em;
 
-  color: #fff;
   font-size: 1.3em;
+  color: #fff;
 
-  display: flex;
-  place-content: center;
+  background: #222;
 }

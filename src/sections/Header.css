@@ -1,28 +1,28 @@
 header {
-  background: #222;
-
   display: flex;
   justify-content: center;
 
   width: 100vw;
   height: 4em;
   padding: 0.7em;
+
+  background: #222;
 }
 
 nav {
-  height: 100%;
-  width: 95%;
+  position: relative;
 
   display: flex;
   place-items: center;
 
-  position: relative;
+  width: 95%;
+  height: 100%;
 }
 
 .logo-wrapper {
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
 }
 
 .logo {
@@ -30,43 +30,43 @@ nav {
 }
 
 header ul {
-  min-width: 65vw;
-  list-style: none;
-
-  flex-grow: 1;
-
   display: flex;
+  flex-grow: 1;
   column-gap: 2em;
   justify-content: center;
+
+  min-width: 65vw;
+
+  list-style: none;
 }
 
 .link {
-  color: #fff;
+  position: relative;
+
   font-size: 1.4em;
   font-weight: normal;
+  color: #fff;
   text-transform: uppercase;
-
-  position: relative;
 
   transition: 0.5s;
 }
 
 .link::before {
   content: '';
-  display: inline-block;
 
   position: absolute;
   bottom: -0.1em;
   left: 50%;
   transform: translateX(-50%);
 
-  background: #fff;
-  border-radius: 0.5em;
-
-  opacity: 0.5;
+  display: inline-block;
 
   width: 0.05em;
   height: 0.05em;
+
+  opacity: 0.5;
+  background: #fff;
+  border-radius: 0.5em;
 
   transition: 1s;
 }
@@ -76,8 +76,8 @@ header ul {
 }
 
 .link.active::before {
-  opacity: 1;
   width: 105%;
+  opacity: 1;
 }
 
 .link:hover::before {

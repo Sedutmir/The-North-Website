@@ -1,13 +1,11 @@
 .parallax-image {
   position: absolute;
-
   width: 100vw;
   height: 100vh;
 }
 
 .parallax-logo {
   position: relative;
-  margin: 12% 0 0 7%;
-
   height: 15em;
+  margin: 12% 0 0 7%;
 }

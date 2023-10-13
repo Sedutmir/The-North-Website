@@ -7,9 +7,13 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "eslint --fix",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "lint:all": "npm run lint:code; npm run lint:styles;",
+    "lint:all:fix": "npm run lint:code:fix; lint:styles:fix; npm run lint:format;",
+    "lint:format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "lint:code": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:code:fix": "eslint --fix",
+    "lint:styles": "stylelint src",
+    "lint:styles:fix": "npm run lint:styles -- --fix"
   },
   "dependencies": {
     "i18nano": "^4.0.1",
@@ -36,6 +40,9 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "prettier": "^3.0.3",
+    "stylelint": "^15.10.3",
+    "stylelint-config-clean-order": "^5.2.0",
+    "stylelint-config-standard": "^34.0.0",
     "typescript": "^5.2.2",
     "vite": "^4.4.5"
   }
