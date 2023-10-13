@@ -1,10 +1,10 @@
-import React from 'react'
-import { Parallax } from 'react-parallax'
+import React from 'react';
+import { Parallax } from 'react-parallax';
 
-import Landscape from '../../../assets/Landscape.png'
-import TheNorth from '../../../assets/TheNorth.png'
+import Landscape from '../../../assets/Landscape.png';
+import TheNorth from '../../../assets/TheNorth.png';
 
-import './ParallaxItem.css'
+import './ParallaxItem.css';
 
 const ParallaxItem: React.FC = () => (
   <Parallax className='parallax-image' bgImage={Landscape} strength={600}>
@@ -12,5 +12,5 @@ const ParallaxItem: React.FC = () => (
       <img className='parallax-logo' src={TheNorth} />
     </div>
   </Parallax>
-)
-export default ParallaxItem
+);
+export default ParallaxItem;

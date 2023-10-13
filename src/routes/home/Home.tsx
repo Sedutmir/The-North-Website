@@ -1,16 +1,21 @@
-import { useTranslation } from 'i18nano'
-import ParallaxItem from './Parallax/ParallaxItem'
+import { useTranslation } from 'i18nano';
+import ParallaxItem from './Parallax/ParallaxItem';
 
-import Discord from '../../assets/icons/discord.svg'
-import Telegram from '../../assets/icons/telegram.svg'
-import VK from '../../assets/icons/vk.svg'
-import Twitch from '../../assets/icons/twitch.svg'
-import GitHub from '../../assets/icons/github.svg'
+import Discord from '../../assets/icons/discord.svg';
+import Telegram from '../../assets/icons/telegram.svg';
+import VK from '../../assets/icons/vk.svg';
+import Twitch from '../../assets/icons/twitch.svg';
+import GitHub from '../../assets/icons/github.svg';
 
-import './Home.css'
+import './Home.css';
+import SocialIcon from '../../components/SocialIcon/SocialIcon';
 
 export default function Home() {
-  const i18n = useTranslation()
+  const i18n = useTranslation();
+  const socials = [
+    { social: 'vk', url: 'https://vk.com/club211987643' },
+    { social: 'mail', url: 'mailto:ilyazdorovtsov@gmail.com' },
+  ];
 
   return (
     <>
@@ -51,34 +56,16 @@ export default function Home() {
           {/* TODO: Add relevant socials */}
           {/* Maybe generate from config? */}
           <ul className='social-icons'>
-            <li>
-              <a href='#'>
-                <img src={Discord} alt='' />
-              </a>
-            </li>
-            <li>
-              <a href='#'>
-                <img src={Telegram} alt='' />
-              </a>
-            </li>
-            <li>
-              <a href='#'>
-                <img src={VK} alt='' />
-              </a>
-            </li>
-            <li>
-              <a href='#'>
-                <img src={Twitch} alt='' />
-              </a>
-            </li>
-            <li>
-              <a href='#'>
-                <img src={GitHub} alt='' />
-              </a>
-            </li>
+            {socials.map(({ social, url }) => {
+              return (
+                <li>
+                  <SocialIcon social={social} url={url} />
+                </li>
+              );
+            })}
           </ul>
         </div>
       </section>
     </>
-  )
+  );
 }

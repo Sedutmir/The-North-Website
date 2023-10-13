@@ -1,16 +1,16 @@
-import { useTranslation } from 'i18nano'
+import { useTranslation } from 'i18nano';
 
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 
-import logo from '../assets/TheNorthWhite.png'
-import './Header.css'
-import LanguageSelect from '../components/LanguageSelect/LanguageSelect'
+import logo from '../assets/TheNorthWhite.png';
+import './Header.css';
+import LanguageSelect from '../components/LanguageSelect/LanguageSelect';
 
 export default function Header() {
-  const i18n = useTranslation()
+  const i18n = useTranslation();
 
   // Display underline for active link
-  const class_link = ({ isActive }: { isActive: boolean }) => (isActive ? 'link active' : 'link')
+  const class_link = ({ isActive }: { isActive: boolean }) => (isActive ? 'link active' : 'link');
 
   return (
     <header>
@@ -50,5 +50,5 @@ export default function Header() {
         <LanguageSelect />
       </nav>
     </header>
-  )
+  );
 }
