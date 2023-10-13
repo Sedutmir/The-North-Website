@@ -1,12 +1,6 @@
 import { useTranslation } from 'i18nano';
 import ParallaxItem from './Parallax/ParallaxItem';
 
-import Discord from '../../assets/icons/discord.svg';
-import Telegram from '../../assets/icons/telegram.svg';
-import VK from '../../assets/icons/vk.svg';
-import Twitch from '../../assets/icons/twitch.svg';
-import GitHub from '../../assets/icons/github.svg';
-
 import './Home.css';
 import SocialIcon from '../../components/SocialIcon/SocialIcon';
 
