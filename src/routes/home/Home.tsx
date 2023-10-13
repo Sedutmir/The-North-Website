@@ -47,8 +47,6 @@ export default function Home() {
             </p>
           </div>
 
-          {/* TODO: Add relevant socials */}
-          {/* Maybe generate from config? */}
           <ul className='social-icons'>
             {socials.map(({ social, url }) => {
               return (
