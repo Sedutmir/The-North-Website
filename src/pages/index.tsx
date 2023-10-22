@@ -1,14 +1,20 @@
 import { lazy } from 'react';
 
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
-const TestPage = lazy(() => import('./test'));
+const Home = lazy(() => import('./home'));
+// const Privacy = lazy(() => import('./privacy'));
+// const Translation = lazy(() => import('./translation'));
+// const Contact = lazy(() => import('./contact'));
 
 export const Routing = () => {
   return (
     <Routes>
-      <Route path='/' element={<TestPage />} />
-      <Route path='*' element={<Navigate to='/' />} />
+      <Route path='/' element={<Home />} />
+      {/* <Route path='/privacy' element={<Privacy />} />
+      <Route path='/translation' element={<Translation />} />
+      <Route path='/blog' element={<h1>! ! ! !! BLOG !! ! ! ! </h1>} />
+      <Route path='/contact' element={<Contact />} /> */}
     </Routes>
   );
 };

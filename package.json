@@ -16,7 +16,6 @@
     "lint:styles:fix": "npm run lint:styles -- --fix"
   },
   "dependencies": {
-    "@gravity-ui/i18n": "^1.1.0",
     "compose-function": "^3.0.3",
     "i18nano": "^4.0.1",
     "react": "^18.2.0",

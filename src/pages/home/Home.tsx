@@ -1,7 +1,7 @@
 import { useTranslation } from 'i18nano';
 
-import SocialIcon from '../../components/SocialIcon/SocialIcon';
-import YouTube from '../../components/YouTube/YouTube';
+import YouTube from '@/entities/YouTube';
+import { SocialIcon } from '@/shared/components';
 
 import ParallaxItem from './Parallax/ParallaxItem';
 
@@ -9,6 +9,7 @@ import './Home.css';
 
 export default function Home() {
   const i18n = useTranslation();
+
   const socials = [
     { social: 'vk', url: 'https://vk.com/club211987643' },
     { social: 'mail', url: 'mailto:ilyazdorovtsov@gmail.com' },
@@ -19,10 +20,10 @@ export default function Home() {
       <ParallaxItem />
       <section className={'subscribe'}>
         <div>
-          <h2>{i18n('subcribe_newsletter')}</h2>
+          <h2>{i18n('home/subcribe_newsletter')}</h2>
           <form>
             <input type='email' name='email' placeholder={'E-mail'} required={true} />
-            <input type='submit' value={i18n('subscribe_button')} />
+            <input type='submit' value={i18n('home/subscribe_button')} />
           </form>
         </div>
       </section>

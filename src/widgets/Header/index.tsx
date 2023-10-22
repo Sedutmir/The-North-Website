@@ -1,7 +1,7 @@
 import { useTranslation } from 'i18nano';
 import { NavLink } from 'react-router-dom';
 
-import { LanguageSelect } from '@components';
+import { LanguageSelect } from '@/shared/components';
 
 import logo from '@assets/TheNorthWhite.png';
 
@@ -23,27 +23,27 @@ export function Header() {
         <ul>
           <li>
             <NavLink to='/' className={classLink}>
-              {i18n('home')}
+              {i18n('navbar/home')}
             </NavLink>
           </li>
           <li>
             <NavLink to='/privacy' className={classLink}>
-              {i18n('privacy')}
+              {i18n('navbar/privacy')}
             </NavLink>
           </li>
           <li>
             <NavLink to='/translation' className={classLink}>
-              {i18n('translation')}
+              {i18n('navbar/translation')}
             </NavLink>
           </li>
           <li>
             <NavLink to='/blog' className={classLink}>
-              {i18n('blog')}
+              {i18n('navbar/blog')}
             </NavLink>
           </li>
           <li>
             <NavLink to='/contact' className={classLink}>
-              {i18n('contact')}
+              {i18n('navbar/contact')}
             </NavLink>
           </li>
         </ul>

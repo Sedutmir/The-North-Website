@@ -11,7 +11,7 @@ export function Footer() {
   return (
     <footer>
       <p>
-        Copyright © {year} {i18n('copyright')}
+        Copyright © {year} {i18n('footer/copyright')}
       </p>
     </footer>
   );

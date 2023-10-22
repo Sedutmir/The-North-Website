@@ -1,0 +1,12 @@
+{
+  "navbar/home": "Home",
+  "navbar/privacy": "Privacy",
+  "navbar/translation": "Translation",
+  "navbar/blog": "Blog",
+  "navbar/contact": "Contact",
+
+  "footer/copyright": "All rights reserved",
+
+  "home/subcribe_newsletter": "Subcribe to our Newsletter",
+  "home/subscribe_button": "Subcribe"
+}
