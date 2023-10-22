@@ -1,15 +1,10 @@
-import { useTranslation } from 'i18nano';
 import { NavLink } from 'react-router-dom';
-
-import { LanguageSelect } from '@/shared/components';
 
 import logo from '@assets/TheNorthWhite.png';
 
 import './index.css';
 
 export function Header() {
-  const i18n = useTranslation();
-
   // Display underline for active link
   const classLink = ({ isActive }: { isActive: boolean }) => (isActive ? 'link active' : 'link');
 
@@ -23,32 +18,30 @@ export function Header() {
         <ul>
           <li>
             <NavLink to='/' className={classLink}>
-              {i18n('navbar/home')}
+              Home
             </NavLink>
           </li>
           <li>
             <NavLink to='/privacy' className={classLink}>
-              {i18n('navbar/privacy')}
+              Privacy
             </NavLink>
           </li>
           <li>
             <NavLink to='/translation' className={classLink}>
-              {i18n('navbar/translation')}
+              Translaton
             </NavLink>
           </li>
           <li>
             <NavLink to='/blog' className={classLink}>
-              {i18n('navbar/blog')}
+              Blog
             </NavLink>
           </li>
           <li>
             <NavLink to='/contact' className={classLink}>
-              {i18n('navbar/contact')}
+              Contact
             </NavLink>
           </li>
         </ul>
-
-        <LanguageSelect />
       </nav>
     </header>
   );
