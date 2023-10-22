@@ -1,0 +1,125 @@
+.subscribe,
+.social {
+  display: flex;
+  justify-content: center;
+
+  padding: 0.5em;
+
+  color: #fff;
+  background: #222;
+}
+
+.subscribe > div {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe form {
+  margin-left: 3em;
+}
+
+.subscribe form input {
+  padding: 0.5em;
+}
+
+.subscribe form input:first-child {
+  color: #000;
+  border: none;
+  border-radius: 12px 0 0 12px;
+  background: #fff;
+}
+
+.subscribe form input:last-child {
+  border: none;
+  border-radius: 0 12px 12px 0;
+  background: #6fca6d;
+}
+
+.subscribe form input:focus-visible {
+  outline: none;
+}
+
+.subscribe form input:last-child:active {
+  outline: 1px solid #76ca6d;
+}
+
+.social {
+  position: relative;
+
+  padding: 2em;
+}
+
+.social::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  display: inline-block;
+
+  width: 75%;
+  height: 1px;
+
+  content: '';
+
+  background: #fffa;
+
+  transform: translateX(-50%);
+}
+
+.social > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+
+  width: 70%;
+}
+
+.social iframe {
+  aspect-ratio: 16 / 9;
+
+  width: 40%;
+  height: auto;
+}
+
+.social-text {
+  max-width: 30%;
+}
+
+.social-icons {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1em;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.social-icons li {
+  border-radius: 50%;
+  background: #333;
+
+  transition: 0.5s;
+  transform: scale(1);
+
+  aspect-ratio: 1 / 1;
+}
+
+.social-icons li:hover {
+  background: #444;
+
+  transform: scale(1.1);
+}
+
+.social-icons li a {
+  display: inline-block;
+
+  width: 100%;
+  height: 100%;
+  padding: 0.7em;
+}
+
+.social-icons img {
+  height: 2em;
+}
