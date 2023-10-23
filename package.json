@@ -16,7 +16,6 @@
     "lint:styles:fix": "npm run lint:styles -- --fix"
   },
   "dependencies": {
-    "compose-function": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-parallax": "^3.5.1",
@@ -24,16 +23,6 @@
     "react-router-dom": "^6.16.0"
   },
   "devDependencies": {
-    "@gravity-ui/components": "^2.5.1",
-    "@gravity-ui/date-components": "^1.0.0",
-    "@gravity-ui/dynamic-forms": "^2.8.2",
-    "@gravity-ui/eslint-config": "^3.1.1",
-    "@gravity-ui/icons": "^2.6.0",
-    "@gravity-ui/prettier-config": "^1.1.0",
-    "@gravity-ui/stylelint-config": "^4.0.0",
-    "@gravity-ui/tsconfig": "^1.0.0",
-    "@gravity-ui/uikit": "^5.17.0",
-    "@types/compose-function": "^0.0.31",
     "@types/node": "^20.8.6",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",

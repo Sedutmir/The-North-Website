@@ -1,0 +1,30 @@
+.a {
+  display: inline-block;
+  padding: 0.9rem;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  background: var(--bg-inversed-item);
+  filter: brightness(100%);
+  transition: 0.5s;
+}
+
+.a[data-size=big] {
+  padding: 1.5rem;
+}
+
+.a[data-size=big] .img {
+  height: 5rem;
+}
+
+.img {
+  height: 3rem;
+  aspect-ratio: 1 / 1;
+  width: auto;
+}
+
+.a:hover {
+  filter: brightness(150%);
+}

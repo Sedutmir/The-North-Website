@@ -1,48 +1,33 @@
-import { NavLink } from 'react-router-dom';
-
-import logo from '@assets/TheNorthWhite.png';
-
-import './index.css';
+import { Logo, NavMenu } from '@/shared/components';
+import styles from './index.module.css';
+import { useState } from 'react';
 
 export function Header() {
-  // Display underline for active link
-  const classLink = ({ isActive }: { isActive: boolean }) => (isActive ? 'link active' : 'link');
+  const [isOpen, setIsOpen] = useState(false);
+
+  const menuItems = [
+    { title: 'Home', to: '/' },
+    { title: 'Privacy', to: '/privacy' },
+    { title: 'Contact', to: '/contact' },
+  ];
 
   return (
-    <header>
-      <nav>
-        <NavLink to='/' className={'logo-wrapper'}>
-          <img src={logo} alt='Logo' className={'logo'} />
-        </NavLink>
-
-        <ul>
-          <li>
-            <NavLink to='/' className={classLink}>
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to='/privacy' className={classLink}>
-              Privacy
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to='/translation' className={classLink}>
-              Translaton
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to='/blog' className={classLink}>
-              Blog
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to='/contact' className={classLink}>
-              Contact
-            </NavLink>
-          </li>
-        </ul>
-      </nav>
+    <header className={styles.header}>
+      <input type='checkbox' name='is_open' className={styles.checkbox} checked={isOpen} />
+      <div className={styles.content}>
+        <div className={styles.mobileBlock}>
+          <button className={styles.mobileMenuButton} onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? 'x' : '='}
+          </button>
+          <Logo type='White' className={styles.logo} />
+        </div>
+        <NavMenu items={menuItems} className={styles.menu} />
+        <div className={styles.languageSelect}>
+          <select value='en'>
+            <option value='en'>EN</option>
+          </select>
+        </div>
+      </div>
     </header>
   );
 }

@@ -7,12 +7,13 @@ import { Footer, Header } from '@/widgets';
 import { Routing } from '../pages';
 
 import './index.css';
+import { Loader } from '@/shared/components';
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Suspense fallback='Loading...'>
+        <Suspense fallback={<Loader />}>
           <Header />
           <Routing />
           <Footer />

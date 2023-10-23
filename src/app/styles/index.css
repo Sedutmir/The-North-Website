@@ -1,3 +1,18 @@
 @import './normalize.css';
 @import './sanitize.css';
 @import './vars.css';
+
+:root {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}

@@ -1,3 +1,14 @@
 :root {
-  font-size: 14px;
+  --color: #111;
+  --color-accent: rgb(255, 199, 14);
+  --color-inversed: #eee;
+
+  --bg: #eee;
+  --bg-inversed: #222;
+
+  --bg-inversed-item: #363636;
+
+  --bg-success: #6fca6d;
+
+  --bg-dark: #333;
 }

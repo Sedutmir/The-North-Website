@@ -1,0 +1,11 @@
+.parallaxImage {
+  position: absolute;
+
+  width: 100vw;
+  height: 105vh;
+}
+
+.inParallaxWrapper,
+.parallaxItems {
+  height: 105vh;
+}

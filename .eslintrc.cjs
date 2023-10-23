@@ -7,11 +7,6 @@ module.exports = {
     'plugin:react-hooks/recommended',
     "plugin:react/recommended",
     "plugin:prettier/recommended",
-    "@gravity-ui/eslint-config",
-    "@gravity-ui/eslint-config/client",
-    // "@gravity-ui/eslint-config/a11y",
-    "@gravity-ui/eslint-config/import-order",
-    "@gravity-ui/eslint-config/prettier",
   ],
   settings: {
   },

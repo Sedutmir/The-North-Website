@@ -1,5 +1,4 @@
 {
-  "extends": "@gravity-ui/tsconfig/tsconfig.json",
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
