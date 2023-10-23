@@ -22,7 +22,7 @@ export function Logo({ type, className }: { type?: 'White' | 'Black' | 'Stroke';
   }
 
   return (
-    <NavLink to='/'>
+    <NavLink to='The-North-Website/'>
       <img className={styles.logo + (className ? ' ' + className : '')} src={logo} alt='Logo' />
     </NavLink>
   );

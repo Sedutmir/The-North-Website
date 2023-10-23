@@ -22,7 +22,7 @@ export function Header() {
           <Logo type='White' className={styles.logo} />
         </div>
         <NavMenu items={menuItems} className={styles.menu} />
-        <div className={styles.languageSelect}>
+        <div className={styles.languageSelect} style={{ opacity: 0 }}>
           <select value='en'>
             <option value='en'>EN</option>
           </select>
