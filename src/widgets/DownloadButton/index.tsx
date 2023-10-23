@@ -4,7 +4,7 @@ export function DownloadButton({ className }: { className?: string }) {
   return (
     <a
       className={styles.downloadButton + (className ? ' ' + className : '')}
-      href='./public/TheNorth.apk'
+      href='./TheNorth.apk'
       download='TheNorth.apk'
     >
       Download

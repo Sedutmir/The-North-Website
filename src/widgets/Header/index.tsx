@@ -6,9 +6,9 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { title: 'Home', to: '/' },
-    { title: 'Privacy', to: '/privacy' },
-    { title: 'Contact', to: '/contact' },
+    { title: 'Home', to: 'The-North-Website/' },
+    { title: 'Privacy', to: 'The-North-Website/privacy' },
+    { title: 'Contact', to: 'The-North-Website/contact' },
   ];
 
   return (
