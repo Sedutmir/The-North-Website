@@ -1,11 +1,9 @@
 import { lazy } from 'react';
 
 import { Route, Routes } from 'react-router-dom';
-
-const Home = lazy(() => import('./home'));
-const Privacy = lazy(() => import('./privacy'));
-// const Translation = lazy(() => import('./translation'));
-const Contact = lazy(() => import('./contact'));
+import Home from './home';
+import Privacy from './privacy';
+import Contact from './contact';
 
 export const Routing = () => {
   return (
