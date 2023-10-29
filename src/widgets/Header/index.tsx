@@ -1,4 +1,4 @@
-import { Logo, NavMenu } from '@/shared/components';
+import { LanguageSelect, Logo, NavMenu } from '@/shared/components';
 import styles from './index.module.css';
 import { useState } from 'react';
 
@@ -22,10 +22,8 @@ export function Header() {
           <Logo type='White' className={styles.logo} />
         </div>
         <NavMenu items={menuItems} className={styles.menu} />
-        <div className={styles.languageSelect} style={{ opacity: 0 }}>
-          <select value='en'>
-            <option value='en'>EN</option>
-          </select>
+        <div className={styles.languageSelect}>
+          <LanguageSelect />
         </div>
       </div>
     </header>

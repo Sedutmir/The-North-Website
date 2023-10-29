@@ -4,8 +4,10 @@ import { ParallaxItem } from '@/shared/components';
 import styles from './index.module.css';
 import { DownloadButton, YouTube } from '@/widgets';
 import { SocialIcons } from '@/widgets/SocialIcons';
+import { useTranslation } from 'react-i18next';
 
 export default function Home() {
+  const { t } = useTranslation();
   return (
     <section>
       <ParallaxItem>
@@ -18,19 +20,17 @@ export default function Home() {
       <div className={styles.subscribeBlock}>
         <form action='' className={styles.subscribeForm}>
           <label htmlFor='email' className={styles.subscribeLabel}>
-            Subcribe to our Newsletter
+            {t('SubscribeLabel')}
           </label>
           <fieldset className={styles.inputs}>
             <input type='email' name='email' id='email' placeholder='E-mail' />
-            <input type='submit' value='Subscribe' />
+            <input type='submit' value={t('Subscribe')} />
           </fieldset>
         </form>
 
         <div className={styles.promo}>
           <YouTube url='https://www.youtube.com/embed/cugalQnsVrw?si=HlAuSCGKYq6FwI4S' className={styles.youtube} />
-          <div className={styles.promoText}>
-            <b>The North</b> is a student project designed to create an interesting game about Vikings!
-          </div>
+          <div className={styles.promoText}>{t('Promo')}</div>
           <SocialIcons />
         </div>
       </div>
